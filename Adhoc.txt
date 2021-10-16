@@ -1,0 +1,19 @@
+Ansible
+----------------------------------------------------
+sudo apt-get install python3
+sudo apt install software-properties-common
+sudo apt-add-repository --yes --update ppa:ansible/ansible
+sudo apt-add-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible 
+
+[servers]
+host1 ansible_ssh_host=172.31.41.65
+
+
+ansible -m ping all
+ansible host2 -m file -a "dest=/home/ubuntu/file state=directory
+ansible host2 -m file -a "dest=/home/ubuntu/file state=absent"
+ansible host1 -m shell -a "mkdir test"
+
+
+ansible-playbook playbook.yml
