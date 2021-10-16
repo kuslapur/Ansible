@@ -1,0 +1,8 @@
+---
+- hosts: servers
+  become: yes
+  name: copy file from one slave to other slave
+  tasks:
+    - name: slave
+      copy: 
+       "src=/home/ubuntu/xyz.txt""dest=/home/ubuntu"
