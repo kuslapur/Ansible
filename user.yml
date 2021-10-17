@@ -1,0 +1,8 @@
+---
+- hosts: servers
+  become: yes
+  name: Creating user
+  tasks:
+    - name: Creating usre
+      command: 
+

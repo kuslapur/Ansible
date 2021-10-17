@@ -5,6 +5,7 @@ sudo apt install software-properties-common
 sudo apt-add-repository --yes --update ppa:ansible/ansible
 sudo apt-add-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible 
+more /etc/passwd
 
 [servers]
 host1 ansible_ssh_host=172.31.41.65
