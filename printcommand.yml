@@ -1,0 +1,11 @@
+---
+- hosts: host1
+  tasks:
+  - name: executing sample command
+    command: echo -e "This is the first line, \n This is second line"
+    register: result
+
+  - name: printing variable
+    debug:
+      var: result
+

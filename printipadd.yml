@@ -1,0 +1,7 @@
+---
+- hosts: host1
+  tasks:
+  
+  - name: printing Ip address
+    debug:
+      msg: "my system ip adress is {{ ansible_default_ipv4.address }}"
