@@ -77,3 +77,20 @@ ansible testservers -m service -a "name=httpd state=stopped"
 Restarting the servers:
 
 ansible testservers -a "/sbin/reboot"
+
+
+ansible all -m shell -a uptime
+ansible all -m shell -a "free -m"
+ansible all -m shell -a "df -h"
+ansible all -m shell -a ls 
+
+ansible host1 --list -i inventory.txt
+
+ansible all 
+ansible all -m file -a "path=/home/ubuntu/ansible_test.txt state=touch"
+ansible all -m file -a "dest=/root/file state=directory"
+ansible all -m file -a "dest=/home/ubuntu/test.txt state=touch"
+
+
+ansible -b  all -m file -a "dest=/opt/test.txt state=touch"  // -b will make root user 
+
