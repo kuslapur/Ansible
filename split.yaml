@@ -1,0 +1,9 @@
+---
+- name: Ansible Split examples
+  hosts: host1
+  vars:
+    - emails: ['bkuslapur@gmail.com', 'kuslapur@gamil.com', 'johan@gmail.com', 'mark@gmail.com']
+  tasks: 
+    - name: print only domains from email
+      debug: msg="{{ item | split('@') | last }}"
+      loop: "{{emails}}"    

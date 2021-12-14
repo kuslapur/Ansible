@@ -1,0 +1,11 @@
+---
+- name: checking shell commands
+  hosts: servers
+  tasks: 
+    - name: checking date in slave machine 
+      shell: 
+        "uname -a"
+      register: unameout
+      when: ansible_ssh_host == "host1"
+    - debug: 
+        var: unameout.stdout_lines    
