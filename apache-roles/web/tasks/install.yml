@@ -1,0 +1,6 @@
+---
+ - name: installng lighthttpd
+   become: yes
+   apt:
+     name: apache2
+     state: latest
