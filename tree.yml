@@ -1,8 +1,0 @@
----
-- hosts: servers
-  become: yes
-  gather_facts: false
-  name: Installing tree
-  tasks:
-    - name: install tree
-      apt: name=tree state=present

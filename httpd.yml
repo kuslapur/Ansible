@@ -1,7 +1,0 @@
----
-- hosts: servers
-  become: yes
-  name: install httpd
-  tasks:
-    -  name: install httpd
-       apt: name=httpd state=present

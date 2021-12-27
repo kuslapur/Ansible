@@ -1,6 +1,0 @@
----
- - name: configure website
-   become: yes
-   copy:
-     src: index.html
-     dest: /var/www/html

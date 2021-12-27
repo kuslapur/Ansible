@@ -1,5 +1,0 @@
-- hosts: host2
-  become: yes
-  roles:
-     - role: Installing Apache2
-       when: ansible_os_family == "Ubuntu"

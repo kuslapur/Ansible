@@ -1,0 +1,6 @@
+# tasks file for date
+---
+  - name: command date exec
+    become: yes
+    shell:
+      "touch 1.txt"

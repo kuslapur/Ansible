@@ -1,8 +1,0 @@
----
-- hosts: servers
-  become: yes
-  name: Creating file in slave
-  tasks:
-    - name: Creating file in slave machine
-      command: touch test.txt
-
