@@ -1,0 +1,7 @@
+ansible localhost -m ping
+ansible localhost -a uptime
+ansible localhost -a "free -h"
+ansible localhost -a "df -h"
+ansible localhost -m shell -a "df -hT"
+ansible localhost -m shell -a "ps aux"
+ansible localhost -a "touch test.txt"
